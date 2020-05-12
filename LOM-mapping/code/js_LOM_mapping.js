@@ -1,15 +1,13 @@
 //include("mylib.js");
 autowatch = 1;
 var LOM_songview_selectedParameter = null;
-var LOM_this_device = null
 
 var mapOn = 0;
 var thisDeviceId = 0;
 
 function get_this_device_id() {
-    LOM_this_device = new LiveAPI("this_device");
+    var LOM_this_device = new LiveAPI("this_device");
     thisDeviceId = LOM_this_device.id;
-    delete LOM_this_device;
 }
 
 function map(val) {
