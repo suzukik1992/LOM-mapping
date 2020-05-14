@@ -38,7 +38,7 @@ function selected_parameter_id(id) {
 
     // same device mapping cancel
     if(parameterDeviceId == thisDeviceId) {
-        // except my M4L mappng releated param
+        // except my M4L mappng system releated param
         var parameterName = LOM_deviceParameter.get("name");
         if(!isNaN(String(parameterName).split(" ")[0])) {
             //("same and canceled");
